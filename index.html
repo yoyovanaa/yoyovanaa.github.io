@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>halaman utama</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #FFE4C4
+  ;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #fffff0;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #A52A2A;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #FFF8DC;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #E9967A;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #FFE4C4;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #fffff0;
+  padding: 20px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #A52A2A;
+  color: #FFF8DC;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Me and My Hobby</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="About Us.html">About Us</a>
+  <a href="Gallery .html">Gallery</a>
+  <a href="Contact us .html" style="float:right">Contact Us</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>About My Hobby</h2>
+      <h5>20 Desember 2021</h5>
+	  <img src="Enhypen1.jpg" alt="image" width="945" height="500">
+      <p>Hallo teman-teman nama saya Yovana, mahasiswa aktif program studi Manajemen di Universitas Bunda Mulia semester 7. Ditengah menjalankan keseharian sebagai mahasiwa akhir yang sedang menempuh mata kuliah skripsi serta mata kuliah pokok, hal ini memang menjadi hal yang cukup melelahkan baik secara fisik maupun mental. Namun saya tetap mencoba menjalankan hari ditengah kesibukan kuliah dengan cara yang menyenangkan salah satunya dengan membagi waktu antara hobi dan belajar. Saya mempunyai cukup banyak hobi mulai dari membaca novel dan komik, menonton drama korea dan drama china, serta salah satu hobi saya yang dapat terbilang unik yaitu menjadi penggemar atau fangirl dari sebuah grup Kpop yang lebih dikenal sebagai Enhypen dengan nama fanbase Engene untuk para penggemarnya. </p>
+      <p>Mungkin sebagian orang terutama orang dewasa mulai bertanya-tanya hobi seperti apa yang sebenarnya dilakukan oleh seorang penggemar?? meskipun hobi kami para penggemar terlihat seperti orang yang punya kelebihan waktu, pada kenyataannya kami tetap menjalankan kehidupan kami seperti biasanya yaitu penuh dengan kesibukan hanya saja kita akan meluangkan waktu untuk mendukung idola kami semaksimal mungkin seperti dengan streaming music video mereka, membeli album, mendengarkan musik mereka melalui berbagai aplikasi streaming musik, serta mendukung mereka melalui voting-voting untuk acara award tertentu. Hobi ini terlihat seperti menghabiskan waktu dan biaya, namun menurut saya terdapat healing dan kesenangan tersendiri misalnya ketika melihat setiap kesuksesan yang mereka dapatkan. hal ini dapat memotivasi saya diumur mereka yang semuda itu mereka sudah menjadi idola global tidak hanya dinegaranya tetapi juga di manca negara.</p>
+      <p>Pada Blog kali ini saya akan memperkenalkan dan memberikan informasi tentang Enhypen, dengan harapan pembaca sekalian dapat tertarik dengan Enhypen, yaitu grup besutan Belift Lab yang masih satu anak perusahaan dengan boyband Kpop International BTS.</p>
+    </div>
+      </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+	  <img src="Yovana.jpg" alt="image" width="270" height="290">
+      <p>Halo nama saya Yovana mahasiswa aktif program studi manajemen semester 7 di Universitas Bunda Mulia. Website ini dibuat untuk memenuhi tugas mandiri dari mata kuliah Web Design. Dengan harapan pengunjung website dapat memperoleh informasi tentang Enhypen dan tertarik untuk menjadi penggemar Enhypen.</p>
+    </div>
+      </div>
+</div>
+
+<div class="footer">
+  <p>Author : 12180018 - Yovana</p>
+  <a href="mailto:yoyovanaa7@gmail.com"><img src="gmail.png" width="45" height="45"></a>
+  <a href="https://www.instagram.com/enhypen/?hl=en"><img src="instagram.png" width="50" height="50"></a>
+  <a href="https://www.youtube.com/channel/UCArLZtok93cO5R9RI4_Y5Jw"><img src="Youtube.png" width="50" height="50"></a>
+  <a href="https://twitter.com/ENHYPEN_members?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twitter.png" width="50" height="50"></a>
+</div>
+
+</body>
+</html>

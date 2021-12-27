@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #FFE4C4;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #fffff0;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #A52A2A;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #FFF8DC;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #E9967A;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #FFE4C4;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #fffff0;
+  padding: 20px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #A52A2A;
+  color: #FFF8DC;
+  margin-top: 20px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, 
+make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, 
+make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Me and My Hobby</h1>
+</div>
+
+<div class="topnav">
+  <a href="Index.html">Home</a>
+  <a href="About Us.html">About Us</a>
+  <a href="Gallery .html">Gallery</a>
+  <a href="Contact us .html" style="float:right">Contact Us</a>
+</div>
+
+<div class="row">
+    <div class="card">
+      <h2>Enhypen Gallery</h2>
+      <h4>Daftar Member Enhypen</h4>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="Jungwon.jpeg" alt="jungwon" width="600" height="400">
+    </a>
+    <div class="desc">Jungwon</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="Heeseung.jpeg" alt="Heeseung" width="600" height="400">
+    </a>
+    <div class="desc">Heeseung</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="Jay.jpeg" alt="Jay" width="600" height="400">
+    </a>
+    <div class="desc">Jay</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="Jake.jpeg" alt="Jake" width="600" height="400">
+    </a>
+    <div class="desc">Jake</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="Sunghoon.jpeg" alt="Sunghoon" width="600" height="400">
+    </a>
+    <div class="desc">Sunghoon</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="Sunoo.jpeg" alt="Sunoo" width="600" height="400">
+    </a>
+    <div class="desc">Sunoo</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="NI-KI.jpeg" alt="NI-KI" width="600" height="400">
+    </a>
+    <div class="desc">NI-KI</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="card">
+      <h4>Daftar Album Enhypen</h4>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="Border Day One.jpg" alt="Border Day One" width="600" height="400">
+    </a>
+    <div class="desc">Border : Day One</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="Border Carnival.jpg" alt="Border Carnival" width="600" height="400">
+    </a>
+    <div class="desc">Border : Carnival</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="Border Hakanai.png" alt="Border Hakanai" width="600" height="400">
+    </a>
+    <div class="desc">Japanese Album Border : Hakanai</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="Dimension Dilemma.jpg" alt="Dimension Dilemma" width="600" height="400">
+    </a>
+    <div class="desc">Dimension : Dilemma</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="Dimension Answer.jpg" alt="Dimension Answer" width="600" height="400">
+    </a>
+    <div class="desc">Coming Soon Dimension : Answer</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+<p>Gallery diatas merupakan daftar member dan album yang telah dikeluarkan Enhypen sepanjang debutnya baik album yang diterbitkan di Korea maupun di Jepang. Dan untuk teman-teman yang tertarik dengan Enhypen setelah melihat website ini semoga teman-teman dapat mendukung Enhypen pada comback terbarunya yang akan keluar pada bulan Januari 2022 mendatang.</p>  
+<p>Terima kasih telah mengunjungi website ini, saya harap informasi yang saya sampaikan dapat berguna untuk pengunjung website ini.</p>
+</div>
+
+	</div>
+</div>
+<div class="footer">
+  <p>Author : 12180018 - Yovana</p>
+  <a href="mailto:yoyovanaa7@gmail.com"><img src="gmail.png" width="45" height="45"></a>
+  <a href="https://www.instagram.com/enhypen/?hl=en"><img src="instagram.png" width="50" height="50"></a>
+  <a href="https://www.youtube.com/channel/UCArLZtok93cO5R9RI4_Y5Jw"><img src="Youtube.png" width="50" height="50"></a>
+  <a href="https://twitter.com/ENHYPEN_members?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twitter.png" width="50" height="50"></a>
+</div>
+
+</body>
+</html>
+
+
+

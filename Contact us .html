@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #FFE4C4;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #fffff0;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #A52A2A;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #FFF8DC;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #E9967A;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #FFE4C4;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #fffff0;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #A52A2A;
+  color: #FFF8DC;
+  margin-top: 20px;
+}
+
+.mail{
+    width: 730px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+.mail div{
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+  }
+label{
+    width: 100px;
+    display: inline-block;
+  }
+.bottom{
+    font-size: 12px;
+    text-align: right;
+  }
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Me and My Hobby</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="About Us.html">About Us</a>
+  <a href="Gallery .html">Gallery</a>
+  <a href="Contact us .html" style="float:right">Contact Us</a>
+</div>
+
+<div class="row">
+    <div class="card">
+      <h2>CONTACT US</h2>
+      <h5>If you any question, please fill the form to contact our email. Thank you</h5>
+      <div class="mail">
+        <form name="WP-Contact-Form">
+            
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name">
+            </div>
+    
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="email">
+            </div>
+    
+            <div>
+                <label for="subject">Subject</label>
+                <input type="text" name="subject">
+            </div>
+    		<div>
+                <label for="Jns_Pesan">Message</label>
+                <select name="Jns_Pesan">
+                	<option value="Saran">Saran</option>
+                    <option value="Komentar">Komentar</option>
+                    <option value="Keluhan">Keluhan</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </div>
+    
+            <div><input type="submit" value="Send email"></div>
+    
+        </form>
+    </div>
+</div>
+<div class="footer">
+  <p>Author : 12180018 - Yovana</p>
+  <a href="mailto:yoyovanaa7@gmail.com"><img src="gmail.png" width="45" height="45"></a>
+  <a href="https://www.instagram.com/enhypen/?hl=en"><img src="instagram.png" width="50" height="50"></a>
+  <a href="https://www.youtube.com/channel/UCArLZtok93cO5R9RI4_Y5Jw"><img src="Youtube.png" width="50" height="50"></a>
+  <a href="https://twitter.com/ENHYPEN_members?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twitter.png" width="50" height="50"></a>
+</div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw2hOPxbIa0aKPE41BEEJuFdp3ziVIK0BQhZfp8-NTXVNCSd_VbDGzMltTMdV1MeUq4-w/exec'
+  const form = document.forms['WP-Contact-Form']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
+
+
+
